@@ -1,0 +1,8 @@
+<ul>
+  <% @tasks.each do |task| %>
+  <li>
+    <%= link_to task.title, "tasks/#{task.id}" %> | <%= task.details %>
+  </li>
+  <% end %>
+
+</ul>
